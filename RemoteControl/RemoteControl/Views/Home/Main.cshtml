@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewData["Title"] = "Main";
+}
+
+<body class="homepage">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div class="container">
+                <!-- Header -->
+                <header id="header">
+                    <div class="inner">
+                        <!-- Logo -->
+                        <h1><a asp-action="Index" id="logo">RemoteControl</a></h1>
+                        <!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li class="current_page_item"><a asp-action="Index">Home</a></li>
+                                <li><a asp-action="PlatformControll">Control</a></li>
+                                <li><a asp-action="LogOut">LogOut</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <!-- Banner -->
+                <div id="banner">
+                    <h2>
+                        <strong>RemoteControl: </strong>service which let you<br>
+                        contorl your platform remotely!
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!-- Main Wrapper -->
+        <div id="main-wrapper">
+            <div class="wrapper style1">
+                <div class="inner">
+                    <!-- Feature 1 -->
+                    <section class="container box feature1">
+                        <div class="row">
+                            <div class="4u 12u(mobile)">
+                                <section>
+                                    <a href="#" class="image featured"><img src="~/images/r1.jpg" height="300" alt="" /></a>
+                                    <header>
+                                        <h3>Testing platform</h3>
+                                    </header>
+                                </section>
+                            </div>
+                            <div class="4u 12u(mobile)">
+                                <section>
+                                    <a href="#" class="image featured"><img src="~/images/r2.jpg" height="300" alt="" /></a>
+                                    <header>
+                                        <h3>Modern platform</h3>
+                                    </header>
+                                </section>
+                            </div>
+                            <div class="4u 12u(mobile)">
+                                <section>
+                                    <a href="#" class="image featured"><img src="~/images/r3.jpg" height="300" alt="" /></a>
+                                    <header>
+                                        <h3>Special Platform</h3>
+                                    </header>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.dropotron.min.js"></script>
+    <script src="~/js/skel.min.js"></script>
+    <script src="~/js/skel-viewport.min.js"></script>
+    <script src="~/js/util.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
+
+
+

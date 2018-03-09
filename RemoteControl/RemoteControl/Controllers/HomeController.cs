@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Mvc;
 using RemoteControl.Models;
 
@@ -6,28 +7,25 @@ namespace RemoteControl.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Move(int direction)
+        {
+            return RedirectToAction("PlatformControll");
+        }
         public ViewResult Index()
         {
-            return View("MyView");
+            return View("Main");
         }
 
-        [HttpGet]
-        public ViewResult RsvpForm()
+        public ViewResult PlatformControll()
         {
             return View();
         }
 
-        public ViewResult ListResponses()
+        public ViewResult LogOut()
         {
-            return View(Repository.Responses.Where((r=>r.WillAttend==true)));
+            return View("Main");
         }
 
-        [HttpPost]
-        public ViewResult RsvpForm(GuestResponse guestResponse)
-        {
-            Repository.AddResponse(guestResponse);
-            return View("Thanks", guestResponse);
-        }
 
         
     }

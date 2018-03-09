@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewData["Title"] = "PlatformControll";
+}
+
+
+<body class="homepage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div class="container">
+
+                <!-- Header -->
+                <header id="header">
+                    <div class="inner">
+
+                        <!-- Logo -->
+                        <h1><a asp-action="Index" id="logo">RemoteControl</a></h1>
+
+                        <!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li><a asp-action="Index">Home</a></li>
+                                <li class="current_page_item"><a asp-action="PlatformControll">Control</a></li>
+                                <li><a asp-action="LogOut">LogOut</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </header>
+                <!-- Banner -->
+                <div id="banner">
+                    <h2>
+                        <strong>Monitor </strong>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <script src="~/js/site.js"></script>
+        <!-- Main Wrapper -->
+        <div id="main-wrapper">
+            <div class="wrapper style1" style="padding: 5em 0 5em 0">
+                <div class="inner">
+                    <section class="container box feature1">
+                        <div class="row">
+                            <section>
+                                <table>
+                                    <tr>
+                                        <td></td>
+                                        <td><a asp-action="Move" asp-controller="Home" asp-route-direction="3" class="button icon">&#9650;</a></td>
+                                        <td></td>
+                                        <td><a asp-action="Move" asp-controller="Home" asp-route-direction="4" class="button icon">+</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a asp-action="Move" asp-controller="Home" asp-route-direction="2" class="button icon">&#9668;</a></td>
+                                        <td><a asp-action="Move" asp-controller="Home" asp-route-direction="-1" class="button icon">&#9632;</a></td>
+                                        <td><a asp-action="Move" asp-controller="Home" asp-route-direction="1" class="button icon">&#9658;</a><br></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><a asp-action="Move" asp-controller="Home" asp-route-direction="0" class="button icon">&#9660;</a></td>
+                                        <td></td>
+                                        <td><a asp-action="Move" asp-controller="Home" asp-route-direction="5" class="button icon">-</a></td>
+                                    </tr>
+                                </table>
+                            </section>
+                            <div class="4u 12u(mobile)">
+                                <section>
+                                    <div class="panel panel-success" style="width:300px">
+                                        <div>
+                                            <h4><strong>Information</strong></h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form class="p-a-1">
+                                                <div class="form-group">
+                                                    <label>Current Action: @ViewBag.currentDirection</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Speed: @ViewBag.speed km/h</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Current Locationt(@ViewBag.x,@ViewBag.y) </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            @if (ViewBag.error == "-1")
+                            {
+                                <div class="4u 12u(mobile)">
+                                    <section>
+                                        <div class="panel panel-success" style="width:300px">
+                                            <div class="panel-body">
+                                                <form class="p-a-1">
+                                                    <div class="form-group">
+                                                        <img src="~/images/red-alert.jpg" style="height:128px" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>There are some problrm with a platform!</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            }
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.dropotron.min.js"></script>
+    <script src="~/js/skel.min.js"></script>
+    <script src="~/js/skel-viewport.min.js"></script>
+    <script src="~/js/util.js"></script>
+    <script src="~/js/main.js"></script>
+
+</body>
+
