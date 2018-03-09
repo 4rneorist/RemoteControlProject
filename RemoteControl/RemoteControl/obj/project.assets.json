@@ -13124,11 +13124,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yorki\\source\\repos\\RemoteControlProject\\RemoteControl\\RemoteControl\\RemoteControl.csproj",
+      "projectUniqueName": "D:\\NeORisT\\UniversityProject\\RemoteControlProject\\RemoteControl\\RemoteControl\\RemoteControl.csproj",
       "projectName": "RemoteControl",
-      "projectPath": "C:\\Users\\Yorki\\source\\repos\\RemoteControlProject\\RemoteControl\\RemoteControl\\RemoteControl.csproj",
+      "projectPath": "D:\\NeORisT\\UniversityProject\\RemoteControlProject\\RemoteControl\\RemoteControl\\RemoteControl.csproj",
       "packagesPath": "C:\\Users\\Yorki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yorki\\source\\repos\\RemoteControlProject\\RemoteControl\\RemoteControl\\obj\\",
+      "outputPath": "D:\\NeORisT\\UniversityProject\\RemoteControlProject\\RemoteControl\\RemoteControl\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

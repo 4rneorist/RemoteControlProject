@@ -20,3 +20,14 @@ C:\Users\Yorki\source\repos\RemoteControlProject\RemoteControl\RemoteControl\obj
 C:\Users\Yorki\source\repos\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.AssemblyInfo.cs
 C:\Users\Yorki\source\repos\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.dll
 C:\Users\Yorki\source\repos\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.pdb
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\bin\Debug\netcoreapp2.0\RemoteControl.deps.json
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\bin\Debug\netcoreapp2.0\RemoteControl.runtimeconfig.json
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\bin\Debug\netcoreapp2.0\RemoteControl.runtimeconfig.dev.json
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\bin\Debug\netcoreapp2.0\RemoteControl.dll
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\bin\Debug\netcoreapp2.0\RemoteControl.pdb
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.csprojResolveAssemblyReference.cache
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.csproj.CoreCompileInputs.cache
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.AssemblyInfoInputs.cache
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.AssemblyInfo.cs
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.dll
+D:\NeORisT\UniversityProject\RemoteControlProject\RemoteControl\RemoteControl\obj\Debug\netcoreapp2.0\RemoteControl.pdb
