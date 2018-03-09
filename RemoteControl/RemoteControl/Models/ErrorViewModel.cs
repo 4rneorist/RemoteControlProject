@@ -1,5 +1,3 @@
-using System;
-
 namespace RemoteControl.Models
 {
     public class ErrorViewModel

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using RemoteControl.Models;
 
@@ -10,28 +6,29 @@ namespace RemoteControl.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public ViewResult Index()
+        {
+            return View("MyView");
+        }
+
+        [HttpGet]
+        public ViewResult RsvpForm()
         {
             return View();
         }
 
-        public IActionResult About()
+        public ViewResult ListResponses()
         {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
+            return View(Repository.Responses.Where((r=>r.WillAttend==true)));
         }
 
-        public IActionResult Contact()
+        [HttpPost]
+        public ViewResult RsvpForm(GuestResponse guestResponse)
         {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
+            Repository.AddResponse(guestResponse);
+            return View("Thanks", guestResponse);
         }
 
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        
     }
 }
