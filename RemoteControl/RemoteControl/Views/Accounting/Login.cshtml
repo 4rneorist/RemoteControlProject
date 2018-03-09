@@ -1,0 +1,78 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<body class="homepage">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div class="container">
+                <!-- Banner -->
+                <div id="banner">
+                    <h2>
+                        <strong>RemoteControl: </strong>service which let you<br>
+                        contorl your platform remotely!
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+        <!-- Main Wrapper -->
+        <div id="main-wrapper">
+            <div class="wrapper style1">
+                <div class="inner">
+                    <!-- Feature 1 -->
+                    <section class="container box feature1">
+                        <div class="row">
+                            <div class="4u 12u(mobile)">
+                                <section></section>
+                            </div>
+                            <div class="4u 12u(mobile)">
+                                <section>
+                                    <div class="panel panel-success" style="width:300px">
+                                        <div>
+                                            <h4><strong>Login</strong></h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form class="p-a-1" asp-action="Login" asp-controller="Accounting" method="post" asp-anti-forgery="true">
+                                                <div class="validation" asp-validation-summary="ModelOnly"></div>
+                                                <div class="form-group">
+                                                    <label asp-for="Username">Username: </label>
+                                                    <input class="form-control" asp-for="Username" />
+                                                    <span asp-validation-for="Username" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label asp-for="Password">Password: </label>
+                                                    <input class="form-control" type="password" asp-for="Password" />
+                                                    <span asp-validation-for="Password" />
+                                                </div>
+                                                <div class="text-center">
+                                                    <input type="submit" value="Login" class="button icon" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="4u 12u(mobile)">
+                                <section></section>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.dropotron.min.js"></script>
+    <script src="~/js/skel.min.js"></script>
+    <script src="~/js/skel-viewport.min.js"></script>
+    <script src="~/js/util.js"></script>
+    <script src="~/js/main.js"></script>
+
+</body>
+
