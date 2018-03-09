@@ -1,11 +1,15 @@
 ﻿using System;
 using System.IO;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RemoteControl.Controllers
 {
     public class HomeController : Controller
     {
+        [Authorize(Roles = "admin")]
         public ActionResult Move(int direction)
         {
             int maxSpeed = 30;
@@ -47,8 +51,6 @@ namespace RemoteControl.Controllers
                     case -1:
                         speed = 0;
                         break;
-                    default:
-                        break;
                 }
             }
             else
@@ -71,7 +73,7 @@ namespace RemoteControl.Controllers
             }
             return RedirectToAction("PlatformControll");
         }
-
+        [Authorize(Roles = "admin")]
         public ViewResult Index()
         {
             //using (RemoteControlContext db = new RemoteControlContext())
@@ -91,7 +93,7 @@ namespace RemoteControl.Controllers
             return View("Main");
             
         }
-
+        [Authorize(Roles = "admin")]
         public ViewResult PlatformControll()
         {
             string direction;
@@ -130,15 +132,14 @@ namespace RemoteControl.Controllers
                 case "-1":
                     ViewBag.currentDirection = "Stop";
                     break;
-                default: break;
-
             }
             return View();
         }
-
-        public ViewResult LogOut()
+        [Authorize(Roles = "admin")]
+        public async Task<IActionResult> LogOut()
         {
-            return View("Main");
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Index","Accounting");
         }
 
 
