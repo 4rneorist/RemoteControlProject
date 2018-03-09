@@ -1,10 +1,6 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Microsoft.AspNetCore.Mvc;
-using RemoteControl.Models;
 
 namespace RemoteControl.Controllers
 {
@@ -75,9 +71,25 @@ namespace RemoteControl.Controllers
             }
             return RedirectToAction("PlatformControll");
         }
+
         public ViewResult Index()
         {
+            //using (RemoteControlContext db = new RemoteControlContext())
+            //{
+            //    db.Database.EnsureCreated();
+            //    User u1 = new User();
+            //    u1.Email = "root@root.root";
+            //    u1.Username = "root";
+            //    u1.Password = "root";
+            //    Role r1 = new Role();
+            //    r1.Name = "admin";
+            //    u1.Role = r1;
+            //    db.Roles.Add(r1);
+            //    db.Users.Add(u1);
+            //    db.SaveChanges();
+            //}
             return View("Main");
+            
         }
 
         public ViewResult PlatformControll()
